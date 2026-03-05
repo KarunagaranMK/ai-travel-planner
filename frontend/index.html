@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🌍 AI Travel Planner</h1>
+        <p class="subtitle">
+            Plan your perfect trip within budget using AI reasoning
+        </p>
+
+        <div class="card">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Destination</label>
+                <input id="destination" placeholder="e.g. Paris, Tokyo, Goa">
+            </div>
+
+            <div class="row">
+                <div class="form-group half">
+                    <label>Number of Days</label>
+                    <input id="days" type="number" min="1">
+                </div>
+
+                <div class="form-group half">
+                    <label>Total Budget ($)</label>
+                    <input id="budget" type="number" min="0">
+                </div>
+            </div>
+
+            <button onclick="planTrip()">🚀 Generate Plan</button>
+
+        </div>
+
+        <div id="loading" class="loading hidden">Planning your trip...</div>
+
+        <div id="result" class="result hidden">
+            <h2>🗺️ Trip Plan</h2>
+            <div id="summary"></div>
+
+            <h3>📌 Itinerary</h3>
+            <div id="itinerary"></div>
+
+            <h3>🧠 AI Reasoning (Step-by-Step)</h3>
+            <div id="reasoning"></div>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

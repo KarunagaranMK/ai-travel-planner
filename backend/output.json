@@ -1,0 +1,21 @@
+{
+    "user":  "John",
+    "trip_plan":  {
+                      "itinerary":  [
+                                        {
+                                            "destination":  "Manali",
+                                            "days":  4,
+                                            "daily_cost":  5173,
+                                            "total_cost":  20692,
+                                            "temperature":  "5-15Â°C"
+                                        }
+                                    ],
+                      "total_cost":  20692,
+                      "remaining_budget":  9308
+                  },
+    "reasoning":  [
+                      "Manali costs 9603/day â?? 38412 total",
+                      "Manali costs 5173/day â?? 20692 total",
+                      "Manali costs 9804/day â?? 39216 total"
+                  ]
+}
